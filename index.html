@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SISCOAF - Sistema de Comunicações COAF</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>SISTEMA DE CONTROLE DE ATIVIDADES FINANCEIRAS - COAF</h1>
+    </header>
+
+    <main>
+        <div class="tabs">
+            <button class="tab active" data-target="registrar">Registrar Comunicação</button>
+            <button class="tab" data-target="visualizar">Visualizar Comunicações</button>
+        </div>
+
+        <section id="registrar" class="tab-content active">
+            <!-- Formulario sera construido dinamicamente por JavaScript -->
+        </section>
+
+        <section id="visualizar" class="tab-content">
+            <div class="table-container">
+                <table id="comunicacoes-table">
+                    <thead>
+                        <tr>
+                            <th>Nº Origem</th>
+                            <th>Data Início</th>
+                            <th>Data Final</th>
+                            <th>Agência</th>
+                            <th>Cidade</th>
+                            <th>UF</th>
+                            <th>Qtd Envolvidos</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Dados serao preenchidos via JavaScript -->
+                    </tbody>
+                </table>
+            </div>
+            <button id="gerar-xml" class="btn btn-primary">
+                <i class="material-icons">download</i> Gerar XML em Lote
+            </button>
+        </section>
+    </main>
+
+    <script src="scripts/main.js"></script>
+</body>
+</html>
