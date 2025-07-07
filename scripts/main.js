@@ -477,6 +477,8 @@ function setupFormEvents() {
 }
 
 function addEnvolvido() {
+
+    const envData = {}
     // Coleta dados
     const envFields = [
         'CPFCNPJEnv', 'NmEnv', 'TpEnv', 'AgNumEnv', 'AgNomeEnv', 
